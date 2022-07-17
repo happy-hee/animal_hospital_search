@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="kdh:war">
+    <output-path>$PROJECT_DIR$/kdh/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>kdh</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="kdh-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="kdh:war exploded" />
+    </root>
+  </artifact>
+</component>
