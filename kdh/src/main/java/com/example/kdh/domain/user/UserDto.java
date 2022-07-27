@@ -10,16 +10,19 @@ import lombok.*;
 @ToString
 public class UserDto {
 
-    // 회원 IDX
-    private String urIdx;
+    // 사용자 고유 ID
+    private String userId;
 
-    // 이메일
-    private String email;
+    // 사용자 ID
+    private String id;
 
-    // 패스워드
+    // 비밀번호
     private String password;
 
-    // 관리자 여부
-    private boolean adminYn;
+    // 사용자 이메일
+    private String email;
+
+    // 연락처
+    private String phone;
 
 }

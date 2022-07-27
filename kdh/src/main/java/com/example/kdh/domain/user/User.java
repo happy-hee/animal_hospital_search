@@ -15,21 +15,24 @@ import javax.persistence.UniqueConstraint;
 @Entity
 @Table(name = "user",
         uniqueConstraints = {
-                @UniqueConstraint(columnNames = {"email"})
+                @UniqueConstraint(columnNames = {"id"})
         })
 public class User extends EntityExtension {
 
-    // 회원 IDX
+    // 사용자 고유 ID
     @Id
-    private String urIdx;
+    private String userId;
 
-    // 이메일
-    private String email;
 
-    // 패스워드
+    // 사용자 ID
+    private String id;
+    // 비밀번호
     private String password;
 
-    // 관리자 여부
-    private boolean adminYn;
+    // 사용자 이메일
+    private String email;
+
+    // 연락처
+    private String phone;
 
 }
